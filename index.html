@@ -1,20 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Title</title>
-    <link rel="stylesheet" href="styles.css"> -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food, LLC</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Kanit Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h1>Food</h1>
-    </header>
-    <main>
-        <p>Food inc.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
+  <!-- header section-->
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Navbar brand only visible on desktop and tablet -->
+                <a href="index.html" class="navbar-brand">
+                    <h1>Food, LLC</h1>
+                </a>
+
+                <!-- Mobile menu button only visible on mobile -->
+                <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collapsible menu items for mobile -->
+            <div id="collapsable-nav" class="collapse navbar-collapse">
+                <ul id="nav-list" class="nav navbar-nav navbar-right text-center visible-xs">
+                    <li><a href="#">Chicken</a></li>
+                    <li><a href="#">Beef</a></li>
+                    <li><a href="#">Sushi</a></li>
+                </ul><!-- #nav-list -->
+            </div><!-- .collapse .navbar-collapse -->
+        </div><!-- .container -->
+    </nav><!-- #header-nav -->
+</header>
+<!-- End of header section-->
+
+
+<!-- Page Heading -->
+<div class="container">
+  <h2 class="text-center">Our Menu</h2>
+</div>
+
+<!-- Tall Section with Heading "Chicken" and Text -->
+<div class="container-fluid tall-section">
+  <div class="row">
+    <div class="col-xs-12">
+      <h3 class="text-center">Chicken</h3>
+      <p class="text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis tellus in justo elementum, a facilisis sapien ultrices. Mauris aliquam, ligula ut hendrerit placerat, nulla ligula faucibus lectus, in facilisis libero augue eu erat. Integer ac lacinia nibh, eget auctor purus.
+        <!-- Repeat this text or add more to make it scrollable if needed -->
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+  <!--  jQuery and Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
